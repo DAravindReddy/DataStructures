@@ -1,0 +1,36 @@
+
+Arrays
+int arr[5] = {1,2,3,4,5};//if you want to modify the size it is not prefered using statically
+int arr[100] = {1,2,3,4,5,6,7};
+
+statically => memory wasted and it will lead to shortage
+
+to avoid it dynamic allocation is came to the picture. It is time consuming process
+->malloc, calloc and realloc is used to modify the size of array but it takes time.
+
+***to overcome that issue linked list came to the picture.
+
+Linked list:
+-----------
+Linked list is in the form of train.
+->linear data structures. 
+->sequence of nodes.
+->each node have data and address.
+->memory will allocate in different location.
+->linked list ends with null pointer for last node address
+->head is the starting address of node in linked list.
+Head is a pointer which contains the address of first node of linked list.
+
+
+=>slist is build with self referential structures:
+
+struct structnode
+{
+	int value;
+	structnode *add;
+};
+int main()
+{
+	struct structnode slist;
+
+
