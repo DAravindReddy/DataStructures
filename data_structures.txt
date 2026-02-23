@@ -128,6 +128,42 @@ int destroy_stack(stack_t stack)
 	stack->item = NULL;
 }
 
+Queue Data structures:
+=====================
+
+First in first out(fifo)
+
+->linear data structure
+->A queue is an ordered list of elements where elements is inserted at one end and removed from the other end of the queue.
+
+=>two key word ->rear and front
+
+Queue->operations:
+-----------------
+1. Enqueue:
+->insertion is happend at rear end
+->update front(when front = -1) and rear.
+->(rear == size -1)Queue full
+
+2. Dequeue:
+->deletion is happened at front end
+->update front.
+->when front == size. Queue is empty.
+
+Types of queues
+1. linear queue
+2. circular queue
+
+Inmplementation
+1. Arrays
+2. Linked list
+
+Applications
+->Serving requests on a single shared resource, like a printer, CPU sheduling etc.
+->Handling interrupts.
+
+
+
 
 
 

@@ -1,0 +1,324 @@
+From 946faa82ac3169d6cf08fbc129ff669893506a2f Mon Sep 17 00:00:00 2001
+From: DAravindReddy <aravindreddy0726@gmail.com>
+Date: Sun, 22 Feb 2026 17:01:31 +0000
+Subject: [PATCH 1/2] adding stack using linked list
+
+---
+ stack-linkedlist/.int.swp         | Bin 0 -> 4096 bytes
+ stack-linkedlist/.satck-sll.h.swp | Bin 0 -> 4096 bytes
+ stack-linkedlist/.stack-sll.h.swo | Bin 0 -> 12288 bytes
+ stack-linkedlist/.stack-sll.h.swp | Bin 0 -> 12288 bytes
+ stack-linkedlist/a.out            | Bin 0 -> 16328 bytes
+ stack-linkedlist/def.c            |  57 ++++++++++++++++++++++++++++++
+ stack-linkedlist/main.c           |  51 ++++++++++++++++++++++++++
+ stack-linkedlist/stacksll.h       |  28 +++++++++++++++
+ 8 files changed, 136 insertions(+)
+ create mode 100644 stack-linkedlist/.int.swp
+ create mode 100644 stack-linkedlist/.satck-sll.h.swp
+ create mode 100644 stack-linkedlist/.stack-sll.h.swo
+ create mode 100644 stack-linkedlist/.stack-sll.h.swp
+ create mode 100755 stack-linkedlist/a.out
+ create mode 100644 stack-linkedlist/def.c
+ create mode 100644 stack-linkedlist/main.c
+ create mode 100644 stack-linkedlist/stacksll.h
+
+diff --git a/stack-linkedlist/.int.swp b/stack-linkedlist/.int.swp
+new file mode 100644
+index 0000000000000000000000000000000000000000..d6292debbc30debf7693fd75f3266c1073485dd0
+GIT binary patch
+literal 4096
+zcmYc?2=nw+u+%eT00IFJ0ReZo85k0a63a64QeZ+jX&2XE?-2h0-7rIcLnjYEoa*YJ
+z2I{*cmLvw36qP2Iloq8H>lc?KCTHvBWaee3rsQN6m*{8amEbgFRAMv)Mnizi5a10p
+xHZn8-X;xNJR1g*lCDWWyZKEMD8UmvsFd71*Aut*OqaiRF0;3@?8UjNx1OO539nb&(
+
+literal 0
+HcmV?d00001
+
+diff --git a/stack-linkedlist/.satck-sll.h.swp b/stack-linkedlist/.satck-sll.h.swp
+new file mode 100644
+index 0000000000000000000000000000000000000000..cbf4e9bad028cac547badc8b3f47a7d17f0a646f
+GIT binary patch
+literal 4096
+zcmYc?2=nw+u+%eT00IFJ0ReJ63=D}yiDj92DKH_Nw2N!7cZh$0ZkVCJp_7LnPIYxq
+z1NB`JOA>=iib|79N{dp9^@~dqle2YmGV`)iQ*ttkOZ1BqOMn8!IXQY6I1L+>7!85Z
+z5FjxGco~e13=Ke<l$8_}goQ#$)IX|xGz3ONU^E0qLtr!nMnhmU1V%$(Gz3ONU?_(G
+E04Vt%mjD0&
+
+literal 0
+HcmV?d00001
+
+diff --git a/stack-linkedlist/.stack-sll.h.swo b/stack-linkedlist/.stack-sll.h.swo
+new file mode 100644
+index 0000000000000000000000000000000000000000..6fec28df44bb2145247bd5431b2ef5f58fe312e5
+GIT binary patch
+literal 12288
+zcmeI2&1w@-6vt0>6|{cTwQ@BG8uQWUqLqkH(@08VTb!obdXu>^myDAzbEl<R^#OG6
+zLcuo>>pQp*TnJtG@djcaLD2sslTWBrC}Q9Y{J7+tdoO2xXBFmDrq>qki0kPr;W<UL
+zn|!HfJ`suIMADNR+O@;XAD{VxwYa*xl3L3yXKxjk_TBp=x-c^@jkJsxR88P1KjRx&
+zZKNFSHk9pX-$Vi5ankjDFXIFoU;_s?5SUtOcCvi!YIZt26u)p@oS7;g{5<bu18jf|
+zumLu}2G{@_U;}Jm><yUK1U<!D9Esi}9jy~1YxI*BHoykh02^QfY=8~00XDz}*Z><~
+z18iUn4M=?6|9On)Bfj^C-~YS+|MyN3eF2}rd+-kIfY;zTcm_0B0ZSkc65t#-3%;Eo
+z`U-Zy3$P6;K!SUq1ZKeuxCo}eY4B^3Xb=1VAHZAi2D}2>paq&B39f*n;5%yH1?_hj
+z!ya(SY=8~00XDz}*Z><~18jf|{Jnv=a&28B?HbWis&T13SG<lfVv$I6qRrM&&@@|@
+zbDd1!*GE%H5#FR6^+34>`zVtsDo=?`B_x)rr=-#DeX$`uEh~-^zJ92LsY~OF&H7e%
+zpW8IOy+n_DMde6DkKZ1J7QKu}gtO57d{~B!k?9;gBD2*}wyI%sI6mD!gW`GxwJ#EZ
+z9~Rf2s>aMG4r*74+j9%0^4)?+WqTp3oX;05OJFuMuHC8=*y@IFFpXVF*KZDmbTf?f
+z53bJT7gJWLv|hxvnj6+;4aD#-vD1zr^8?~X8#R#nzq%D0Ro-n=?BDe#cIf^24eEJO
+AyZ`_I
+
+literal 0
+HcmV?d00001
+
+diff --git a/stack-linkedlist/.stack-sll.h.swp b/stack-linkedlist/.stack-sll.h.swp
+new file mode 100644
+index 0000000000000000000000000000000000000000..4782550c20e325f547e4a359677cfd983fa176a4
+GIT binary patch
+literal 12288
+zcmeI2O=}ZD7{{mHid02U9+c5sG&D(94<ZqvrjeA!wzy5vQ=Mcd-688{*_~~vuOC3~
+z9z6IN>UZ!ic<=>0d+|f~->})Fg$g|e{sTXT%=0|+^1Fq7x=Y)ukL2B|BQP!q@on*=
+zx${+sKWBwdvD!1Cmqq?NR+{eG*2ZRK+u3j)wAN3|eUookTTxcIHcopsjdfB>tm+La
+zfe8oN3ru43g(L{7{)wA0Km#;zN&^ex_AO^AD=J;TCNEv=oU)$jG(ZD1Km#;D12jMb
+zG(ZEhY`{iy;w>I<CV#}`e4aZt=RY~o01eOp4bT7$&;Sk401eOp4bT7$%%A~<&-=d@
+zgm`)mm&f=2@&Et7=Y{wIzJo8|GdKjFz<clx7_bS}K?9V*Rd5CT!hS!&A@~4Zfi6(s
+z8OY9i0yt=Z255i=Xn+Q2fCgxQ255i=X52tYho0%<5hk=U(mJ{^YV+PfSGO$NVRW-T
+zjtr(F)1l#!n(0WI_{WPDWp<Db^m83rY%XfGmX5XD*HU5X#adYt?#ewC8`TZ8Ow0={
+zt*>k%_x*!$UO2Qxt`M(_JJ-d0GU`~D#gZ&%E$awm2YYB~uZx$$9z@#HePm_r?UQ6&
+zr?|ps2bm_>btYZ!=*dN)3AKE<yxQ(OZpw;NEV-RVqv^Wy=-n-uuotABzL!{Z%Xh2(
+e{Ub|en5|3-x0V}g6}R2qX(6p2W_NR^*8Tx6*uuL2
+
+literal 0
+HcmV?d00001
+
+diff --git a/stack-linkedlist/a.out b/stack-linkedlist/a.out
+new file mode 100755
+index 0000000000000000000000000000000000000000..62736d4935926ceda90cafec7f3da7aa9ec29994
+GIT binary patch
+literal 16328
+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
+z=kuW@WR2~TN_fA_XL%0De!hrm)1^vsJ?wyatkbtT!nl5(U)E`U(4Ok@r&+pwZSEB@
+zUx(4dneUf8c040wqS|4b9x$H)MpI~R58oH*xt80Gte1wGRQ8sDbFP;SY5HA`f0F*#
+Lkmd&n0ag418uy5a
+
+literal 0
+HcmV?d00001
+
+diff --git a/stack-linkedlist/def.c b/stack-linkedlist/def.c
+new file mode 100644
+index 0000000..6a5a095
+--- /dev/null
++++ b/stack-linkedlist/def.c
+@@ -0,0 +1,57 @@
++
++#include"stacksll.h"
++
++
++int push(stack_sll **top, int data)
++{
++	
++	stack_sll *new = (stack_sll *)malloc(sizeof(stack_sll));
++	if(new == NULL)
++                return FAILURE;
++	new->data = data;
++	new->link = *top;
++
++	*top = new;
++	return SUCCESS;
++}
++
++int pop(stack_sll **top)
++{
++	if(*top == NULL)
++		return FAILURE;
++
++	stack_sll *temp = *top;
++	int poped_data = temp->data;
++	*top = temp->link;
++	free(temp);
++
++	return poped_data;
++}
++
++int peek(stack_sll **top)
++{
++	if(*top == NULL)
++		return FAILURE;
++	return (*top)->data;
++}
++
++int peep(stack_sll *top)
++{
++	if(top == NULL)
++	{
++		printf("Stack is empty\n");
++		return FAILURE;
++	}
++
++	stack_sll *temp = top;
++
++	while(temp)
++	{
++		printf("%d -> ", temp->data);
++		temp = temp->link;
++	}
++
++	printf("NULL\n");
++	return SUCCESS;
++}
++	
+diff --git a/stack-linkedlist/main.c b/stack-linkedlist/main.c
+new file mode 100644
+index 0000000..c71ebaf
+--- /dev/null
++++ b/stack-linkedlist/main.c
+@@ -0,0 +1,51 @@
++
++#include"stacksll.h"
++
++int main()
++{
++	int choice, data;
++	int peek1;
++	stack_sll *top = NULL;
++
++	printf("1. push element\n2. pop an element\n3. peek\n4. peep\n5. Exit\nEnter your choice: ");
++	while(1)
++	{
++		scanf("%d", &choice);
++		switch(choice)
++		{
++			case 1: printf("Enter the element which you want to push: ");
++				scanf("%d", &data);
++				if(push(&top, data) == FAILURE)
++				{
++					printf("Info: pushing element fails\n");
++				}
++				else
++				{
++					printf("Info: element is pushed successfully\n");
++				}
++				break;
++			case 2:if(pop(&top) == FAILURE)
++				       printf("Info: pop operation failed\n");
++			       else
++				       printf("Infp: element deleted successfully\n");
++			       break;
++			case 3:
++				if((peek1 = peek(&top)) == FAILURE)
++					printf("Info: list is empty\n");
++				else
++					printf("Peek element is %d\n", peek1);
++				break;
++			case 4:
++				peep(top);
++				break;
++			case 5:
++				return SUCCESS;
++			default: printf("Enter valid choice\n");
++				 break;
++
++		}
++	}
++	return 0;
++}
++	
++
+diff --git a/stack-linkedlist/stacksll.h b/stack-linkedlist/stacksll.h
+new file mode 100644
+index 0000000..e460279
+--- /dev/null
++++ b/stack-linkedlist/stacksll.h
+@@ -0,0 +1,28 @@
++
++#ifndef STACKSLL_H
++#define STACKSLL_H
++
++
++#include<stdio.h>
++#include<stdlib.h>
++
++#define SUCCESS 0
++#define FAILURE -1
++
++//creating stack using linkedlist
++typedef struct stack_sll
++{
++        int data;
++        struct stack_sll *link;
++}stack_sll;
++
++//Here we are creating variable size thats why we are not creating
++
++int push(stack_sll **top, int element);
++int pop(stack_sll **top);
++int peek(stack_sll **top);
++int peep(stack_sll *top);
++
++
++
++#endif
+-- 
+2.17.1
+
