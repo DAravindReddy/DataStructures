@@ -1,0 +1,10 @@
+
+SDLC: software Development Life Cycle
+-------------------------------------
+
+1. Problem solving Approach:
+->Understand the problem
+->Derive a solution
+->Implement the solution
+->Test and Revisit
+
